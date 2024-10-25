@@ -156,8 +156,9 @@
 
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container is-max-desktop has-text-centered">
-      <h2 class="title is-3">Method</h2>
+    <div class="container">
+      <h2 class="title has-text-centered">Method</h2>
+      <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <!-- First Image -->
@@ -176,43 +177,53 @@
 
 <!-- Soundscape Maps Section -->
 <section class="section">
-  <div class="container is-max-desktop has-text-centered">
-    <h2 class="title">Soundscape Maps</h2>
-    <div class="columns is-multiline">
-      
-      <!-- Figure 1 -->
-      <div class="column is-full has-text-centered">
-        <img src="static/images/figure1.png" alt="Figure 1 Description">
-        <h2 class="subtitle has-text-centered">
-          Two soundscape maps of the continental United States, generated from Bing image embeddings obtained from PSM, accompanied by a land cover map for reference.
-         </h2>
+  <div class="container is-max-desktop">
+    <h2 class="title has-text-centered">Soundscape Maps</h2>
+    
+    <!-- First Row: Figure 1 on left, Figures 2,3 stacked on right -->
+    <div class="columns is-centered">
+      <!-- Left Column - Figure 1 -->
+      <div class="column is-half">
+        <div class="has-text-centered mb-6">
+          <img src="static/images/figure1.png" alt="Figure 1 Description">
+          <h2 class="subtitle has-text-centered">
+            Two soundscape maps of the continental United States, generated from Bing image embeddings obtained from PSM, accompanied by a land cover map for reference.
+          </h2>
+        </div>
       </div>
       
-      <!-- Figure 2 -->
-      <div class="column is-full has-text-centered">
-        <img src="static/images/figure2.png" alt="Figure 2 Description">
-        <h2 class="subtitle has-text-centered">
-          Soundscape maps over smaller geographic areas using PSM embeddings from Sentinel-2 satellite imagery at two zoom levels.
-         </h2>
+      <!-- Right Column - Figures 2 and 3 stacked -->
+      <div class="column is-half">
+        <!-- Figure 2 -->
+        <div class="has-text-centered mb-6">
+          <img src="static/images/figure2.png" alt="Figure 2 Description">
+          <h2 class="subtitle has-text-centered">
+            Soundscape maps over smaller geographic areas using PSM embeddings from Sentinel-2 satellite imagery at two zoom levels.
+          </h2>
+        </div>
+        
+        <!-- Figure 3 -->
+        <div class="has-text-centered">
+          <img src="static/images/figure3.png" alt="Figure 3 Description">
+          <h2 class="subtitle has-text-centered">
+            Temporally dynamic soundscape maps created by querying our model with audio and text query.
+          </h2>
+        </div>
       </div>
-      
-      <!-- Figure 3 -->
-      <div class="column is-full has-text-centered">
-        <img src="static/images/figure3.png" alt="Figure 3 Description">
-        <h2 class="subtitle has-text-centered">
-          Temporally dynamic soundscape maps created by querying our model with audio and text query.
-         </h2>
-      </div>
-      
-      <!-- Figure 4 -->
-      <div class="column is-full has-text-centered">
-        <img src="static/images/figure4.png" alt="Figure 4 Description">
-        <h2 class="subtitle has-text-centered">
-          A soundscape map of the USA for a text query: sound of insects compared with a reference map indicating the risk of pest-related hazards.
-         </h2>
-      </div>
-      
     </div>
+    
+    <!-- Second Row: Figure 4 full width -->
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="has-text-centered">
+          <img src="static/images/figure4.png" alt="Figure 4 Description">
+          <h2 class="subtitle has-text-centered">
+            A soundscape map of the USA for a text query: sound of insects compared with a reference map indicating the risk of pest-related hazards.
+          </h2>
+        </div>
+      </div>
+    </div>
+    
   </div>
 </section>
 
@@ -230,20 +241,31 @@
 <!-- End Satellite Image to Sound Retrieval Section -->
 
 
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@inproceedings{khanal2024psm,
-        title = {PSM: Learning Probabilistic Embeddings for Multi-scale Zero-Shot Soundscape Mapping},
-        author = {Khanal, Subash and Xing, Eric and Sastry, Srikumar and Dhakal, Aayush and Xiong, Zhexiao and Ahmad, Adeel and Jacobs, Nathan},
-        year = {2024},
-        month = nov,
-        booktitle = {Association for Computing Machinery Multimedia (ACM Multimedia)},
-      }</code></pre>
-    </div>
+<!-- BibTex citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre style="user-select: text;"><code id="bibtex">@inproceedings{khanal2024psm,
+      title = {PSM: Learning Probabilistic Embeddings for Multi-scale Zero-Shot Soundscape Mapping},
+      author = {Khanal, Subash and Xing, Eric and Sastry, Srikumar and Dhakal, Aayush and Xiong, Zhexiao and Ahmad, Adeel and Jacobs, Nathan},
+      year = {2024},
+      month = nov,
+      booktitle = {Association for Computing Machinery Multimedia (ACM Multimedia)},
+    }</code></pre>
+  </div>
 </section>
 <!--End BibTex citation -->
+
+<!-- Lab link section with reduced top margin -->
+<section class="section" style="padding-top: 0;">
+  <div class="container is-max-desktop content has-text-centered">
+    <p>
+      Follow more works from our lab: <a href="https://mvrl.cse.wustl.edu" target="_blank">The Multimodal Vision Research Laboratory (MVRL)</a>
+    </p>
+  </div>
+</section>
+
+
 
 
   <footer class="footer">
